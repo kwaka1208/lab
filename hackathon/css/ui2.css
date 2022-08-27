@@ -1,0 +1,131 @@
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
+body, html{
+  height: 100%;
+  background: #333;
+}
+
+.container{
+  display: block;
+  position: absolute;
+  margin: auto;
+  height: 220px;
+  width: 85%;
+  bottom: 0; left:0; right: 0; top:0;
+  padding: 0;
+}
+
+.container ul{
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  color: #FFF;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 25%;
+}
+
+ul li input[type=radio]{
+  position: absolute;
+  top: -9999px;
+}
+
+ul li label{
+  display: block;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  padding: 10px 25px 10px 40px;
+  margin: 10px auto;
+  height: 30px;
+  z-index: 9;
+  background: rgba(255,255,255,0.15);
+  cursor: pointer;
+}
+
+ul li label:hover{
+  background: rgba(255,255,255,0.45);
+}
+
+ul li .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #FFF;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  top: 35%;
+  left: 6%;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 5px solid #0DFF92;
+}
+
+input[type=radio]:checked ~ .check .inside{
+  display: block;
+  position: relative;
+  background: #0DFF92;
+  border-radius: 100%;
+  height: 70%;
+  width: 70%;
+  top: 15%;
+  margin: auto;
+}
+
+input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+
+.speak-button a{
+	width: 85%;
+	height: 50px;
+    padding: 20px;
+    font-size: 18pt;
+	background:#bdc3c7;
+	color:#000000;
+	text-align:center;
+	display:block;
+	text-decoration:none;
+}
+.speak-button a:hover{
+	text-decoration:none;
+	background:#bdc3c7;
+	color:#000000;
+}
+
+
+.select {
+	margin-bottom: 20px;
+	width: 85%;
+	height: 50px;
+    padding: 20px;
+    font-size: 18pt;
+	background:#95a5a6;
+	color:#000000;
+    border-style: none;
+}
+
+
+.submit {
+	width: 85%;
+    padding: 20px;
+    font-size: 18pt;
+	background:#bdc3c7;
+	color:#000000;
+    border-style: none;
+}
+
+.word {
+	width: 80%;
+    font-size: 18pt;
+}
+

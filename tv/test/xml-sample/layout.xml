@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Category>
+<title>
+<img src="img/Ribbon_WEB_Contents.bmp" posX="0" posY="0" width="140" height="140" lang="ja"/>
+<img src="img/Tl_VOD_Recommend.png" posX="107" posY="26" width="360" height="30" lang="ja"/>
+<img src="img/Ribbon_WEB_Contents_e.bmp" posX="0" posY="0" width="140" height="140" lang="en"/>
+<img src="img/Tl_VOD_Recommend_e.png" posX="107" posY="26" width="360" height="30" lang="en"/>
+
+</title>
+
+<a href="https://notification.aquos.jp/vodsearch/aquoshome/launch.jsp?esp_content=1&amp;cpid=cp003&amp;search_id=cp003220a002b76&amp;title=%E3%83%9C%E3%83%BC%E3%83%B3%E3%83%BB%E3%82%B9%E3%83%97%E3%83%AC%E3%83%9E%E3%82%B7%E3%83%BC" app="browser" 
+mode="half">
+
+<content num="9">
+	<img posX="15" posY="80" width="484" height="198" src="img/bg_gray.bmp" />
+
+	<img posX="20" posY="80" width="96" height="92" src="img/PICT_VOD.png" />
+	<string size="16" color_s="0x000000FF" posX="25"  posY="178" width="80"  height="90" pos_h="CENTER" pitch_h="4" str="ビデオオンデマンド" />
+
+	<img posX="115" posY="130" width="140" height="98"
+ src="http://www.hikaritv.net/search/md_ipsp/images/a002b76.jpg" />
+
+	<string size="24" color_s="0x000000FF" posX="265" posY="86"  width="228" height="58" pitch_h="4" pos_v="CENTER" str="ボーン・スプレマシー" />
+	<string size="18" color_s="0x000000FF" posX="265" posY="155" width="228" height="90" pitch_h="4" str="［見放題］愛の終わりは、戦いの始まり…。記憶を失っていた男（マット・デイモン）に再び脅威が襲いかかる！" />
+	<string size="18" color_s="0x000000FF" posX="265" posY="255" width="220" height="20" pos_h="RIGHT" str="ひかりＴＶ" />
+	<string size="12" color_s="0x000000FF" posX="17"  posY="286" width="480" height="60" str="(c) 2004 Universal Studios. All Rights Reserved. " />
+</content>
+</a>
+
+</Category>
+

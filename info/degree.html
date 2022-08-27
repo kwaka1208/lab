@@ -1,0 +1,26 @@
+﻿<html>
+	<head>
+		<title>iPad角度検出</title>
+	</head>
+	<body>
+	<script type="text/javascript">
+	timerID = setTimeout(message, 500);
+
+	function message() {
+		document.getElementById("result").innerHTML = window.orientation;
+		setTimeout(message, 500);
+	}
+/*
+	window.addEventListener('load', setOrientation, false); 
+	window.addEventListener('orientationchange', setOrientation, false);
+
+	function setOrientation() { 
+		alert(window.orientation);
+	}
+*/
+	</script>
+	<div id="result" align="center">
+	角度
+	</div>
+	</body>
+</html>

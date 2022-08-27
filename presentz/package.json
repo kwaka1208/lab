@@ -1,0 +1,26 @@
+{
+  "name": "presentz.js",
+  "description": "A web library to show synchronized video + slides presentations",
+  "keywords": ["presentation", "slide", "video", "synchronization"],
+  "version": "1.3.1",
+  "author": "Federico Fissore <federico@fissore.org>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ffissore/presentz.js.git"
+  },
+  "devDependencies": {
+    "uglify-js": "",
+    "mocha": "",
+    "coffee-script": ""
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha --compilers coffee:coffee-script --reporter spec",
+    "docs": "docco src/*.coffee"
+  },
+  "licenses": [
+    {
+      "type": "LGPLv3",
+      "url": "https://www.gnu.org/copyleft/lgpl.html"
+    }
+  ]
+}

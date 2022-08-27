@@ -1,0 +1,102 @@
+﻿/*
+	Foundamental definition
+*/
+body {
+	background: lightgray;
+	background-image: url(/images/background/paper.png);
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #1c272d;
+	margin-left:30px;
+	margin-top:10px;
+	width: 800px;
+	-webkit-font-smoothing: antialiased;
+	overflow-y: hidden;
+}
+
+a:link {
+	color: #334651;
+	font-size: inherit;
+	font-weight: bolder;
+	text-decoration:none;
+}
+
+a:visited {
+	color: #334651;
+	text-decoration: none;
+	font-size: inherit;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+img  { 
+	border-style: none;
+}
+
+li {
+	list-style:none;
+
+}
+
+
+/*
+	Common definition
+*/
+.clearfloat {
+	clear: both;
+}
+
+#box1 {
+	float: right;
+	width: 240px;
+	border-width: 1px;
+	border-color: black;
+	border-style: sold;
+	padding-right: 2px;
+}
+
+#box2 {
+	float: right;
+	width: 240px;
+	border-width: 1px;
+	border-color: black;
+	border-style: sold;
+	padding-right: 2px;
+}
+
+#box3 {
+	float: right;
+	width: 240px;
+	border-width: 1px;
+	border-color: black;
+	border-style: sold;
+	padding-right: 2px;
+}
+
+#box4 {
+	float: right;
+	width: 240px;
+	border-width: 1px;
+	border-color: black;
+	border-style: sold;
+	padding-right: 2px;
+}
+
+#box5 {
+	float: right;
+	width: 240px;
+	border-width: 1px;
+	border-color: black;
+	border-style: sold;
+	padding-right: 2px;
+}
+
+.borderedbox {
+	padding : 5px;
+	border-width: 1px;
+	border-color: silver;
+	border-style: sold;
+}

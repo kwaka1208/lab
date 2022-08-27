@@ -1,0 +1,232 @@
+/*
+	Foundamental definition
+*/
+body {
+	background: lightgray;
+	background-image: url(../images/background/paper.png);
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #1c272d;
+	margin-left:30px;
+	margin-top:10px;
+	width: 800px;
+	-webkit-font-smoothing: antialiased;
+}
+
+a:link {
+	color: #334651;
+	font-size: inherit;
+	font-weight: bolder;
+	text-decoration:none;
+}
+
+a:visited {
+	color: #334651;
+	text-decoration: none;
+	font-size: inherit;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+img  { 
+	border-style: none;
+}
+
+li {
+	list-style:none;
+
+}
+
+
+/*
+	Common definition
+*/
+#header {
+	overflow: auto;
+	position: relative;
+	width: inherit;
+}
+
+#site_title {
+	font-family: Georgia, serif;
+	font-size: 3em;
+	font-weight: bolder;
+	color: #334651;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), -1px -1px 1px rgba(255, 255, 255, 0.2);
+	line-height: 1.2em;
+}
+
+#tag_line {
+	font-family: Georgia, serif;
+}
+
+.clearfloat {
+	clear: both;
+}
+
+/*
+	Footer
+*/
+#counter {
+	font-family: Georgia, serif;
+	position: relative;
+	text-align: right;
+	font-size: 95%;
+	width: inherit;
+}
+
+#copyright {
+	font-family: Georgia, serif;
+	position: relative;
+	text-align: right;
+	font-size: 95%;
+	width: inherit;
+}
+
+#social_links {
+	font-family: Georgia, serif;
+	font-size: 95%;
+	text-align: right;
+	width: inherit;
+}
+
+/*
+	Global Menu
+*/
+
+#global_menu {
+	font-family: inherit;
+	background-color: inherit;
+	position: relative;
+	width: inherit;
+}
+
+#global_menu li {
+	list-style:none;
+	font-size: inherit;
+	float:left;
+	padding-right: 30px;
+	border-bottom: #334651;
+	line-height: 3em;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-top-width: thin;
+	margin-bottom: 30px;
+}
+
+/*
+	Main area
+*/
+
+#main_area {
+	position: relative;
+	width: inherit;
+}
+
+.section_title {
+	font-family: inherit;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	width: inherit;
+	line-height: 2em;
+}
+
+.article_title {
+	font-weight: bold;
+	font-size: inherit;
+	padding-top: 20px;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	padding-left: 5px;
+	border-bottom: 1px dotted #583;
+	width: inherit;
+	clear: both;
+}
+
+.article_body {
+	font-size: inherit;
+	background-color: transparent;
+	width: inherit;
+	line-height: 2em;
+	margin-left: 2%;
+	padding-bottom: 20px;
+}
+
+.centered {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center
+}
+
+.favorite_item {
+	font-size: inherit;
+	background-color: transparent;
+	width: 25%;
+	float: left;
+}
+
+.date {
+	font-family: inherit;
+}
+
+/*
+	Top page
+*/
+#photopanel {
+	padding: 0px;
+	margin: 0px;
+	width: inherit;
+}
+
+/*
+	Lisa
+*/
+
+#lisa_main_area {
+	width: 480px;
+	float: left;
+}
+#lisa_main_area ul {
+	margin-top: 0px;
+	padding-top: 0px;
+	line-height: 1.5em;
+}
+
+#lisa_menu {
+	width: 280px;
+	float: right;
+}
+
+#lisa_menu ul {
+	margin-top: 0px;
+	padding-top: 0px;
+	line-height: 1.5em;
+}
+
+.age {
+	font-size: 150%;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), -1px -1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/*
+	hiroyo
+*/
+
+#hiroyo_main_area img {
+	margin-right: 10px;	
+}
+
+
+/*
+	New year message
+*/
+
+#newyear {
+	font-size: 120%;
+	font-weight: bold;
+}

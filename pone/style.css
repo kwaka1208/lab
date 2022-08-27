@@ -1,0 +1,29 @@
+body {
+	background-image: url(jan07wall03.gif);
+}
+
+
+.message1 {
+	font-size:200%;
+	text-align: center;
+	font-weight: bolder;
+	height: 2em;
+}
+
+.message2 {
+	font-size:150%;
+	text-align: center;
+	height: 2em;
+}
+
+.message3 {
+	font-size:120%;
+	text-align: center;
+	height: 2em;
+}
+
+.person {
+	font-weight: bolder;
+	text-align: center;
+	height: 1.2em;
+}

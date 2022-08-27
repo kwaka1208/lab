@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Wakabayashi, Kenichi" />
+		<title>おみくじ</title>
+	<script type="text/javascript" src="/common/pote2.js"></script>
+	<script type="text/javascript" src="/common/prototype-1.6.0.3.js"></script>
+	</head>
+	<body>
+		<div id="fortune" align="center">
+<script type="text/javascript">
+	function GetFortune()
+	{
+		name = document.fortune.name.value;
+		if (0 == name.length)
+		{
+			alert("名前を入力してください。");
+			return false;
+		}
+		url = "/lab/omikuji/fortune.php?name=" + encodeURI(name);
+		
+		new Ajax.Request(url,
+			{method:"get",
+			onSuccess:
+				function(xmlhttp)
+				{
+					$("result").innerHTML = "<div align='center'><img src='takarabu01.gif' height='60' width='60' align='center'>";
+					$("result").innerHTML += unescape(xmlhttp.responseText);
+					$("result").innerHTML += "</div>";
+				}
+			});
+		return false;
+	}
+</script>
+			名前を入力してからボタンをクリックしてください。<br />
+			名前で運勢を占いますので、何度やっても同じ結果になります。<br />
+			<br />
+		<form name="fortune" action="" onSubmit="GetFortune(); return false;">
+			1.名前を入力して→<input name="name" type="text"><br />
+			<br />
+			2.ボタンを押してください→
+			<input type="submit" name="omikuji" value="今年の運勢を占う！" /><br />
+			<br />
+			3.ここに結果が出ます。<br />
+		</form>
+		</div>
+		<br />
+		<div id="result" align="center">
+			あなたの今年の運勢は?
+		</div>
+		<br /><br />
+			結果が不満だ、どうしてもやり直したいという方は、<br />
+			名前をひらがな、カタカナ、アルファベットなどで入力しなおしてみてください。<br />
+			結果が変わるかもしれません。
+		</div>
+	</body>
+</html>

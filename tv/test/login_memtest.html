@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+
+    <meta http-equiv=Content-Type content="text/html; ">
+
+    <object name=test type="application/x-aquos-system-plugin" width=0 height=0>
+    </object>
+
+    <script>
+
+
+    function getlogininfo()
+    {
+        document.form1.text1.value = test.AquosGetSystemInfo("CLUB_JP_NICKNAME");
+        document.form1.text2.value = test.AquosGetSystemInfo("CLUB_JP_ID");
+        document.form1.text3.value = test.AquosGetSystemInfo("CLUB_JP_CODE");
+        document.form1.text4.value = test.AquosGetSystemInfo("CLUB_JP_EXPIREDATE");
+    }
+
+    function setlogininfo()
+    {
+        test.AquosSetSystemInfo("CLUB_JP_NICKNAME",document.form1.text1.value);
+        test.AquosSetSystemInfo("CLUB_JP_ID",document.form1.text2.value);
+        test.AquosSetSystemInfo("CLUB_JP_CODE",document.form1.text3.value);
+        test.AquosSetSystemInfo("CLUB_JP_EXPIREDATE",document.form1.text4.value);
+    }
+
+    function clearlogininfo()
+    {
+        test.AquosSetSystemInfo("CLUB_JP_NICKNAME","");
+        test.AquosSetSystemInfo("CLUB_JP_ID","");
+        test.AquosSetSystemInfo("CLUB_JP_CODE","");
+        test.AquosSetSystemInfo("CLUB_JP_EXPIREDATE","");
+    }
+
+    function setlogininfovalue()
+    {
+        document.form1.text1.value = "%e3%83%86%e3%82%b9%e3%83%88";
+        document.form1.text2.value = "test@aquos.jp";
+        document.form1.text3.value = "0123456789";
+        document.form1.text4.value = "2012.07.31 23:59 GMT+09:00";
+        test.AquosSetSystemInfo("CLUB_JP_NICKNAME",document.form1.text1.value);
+        test.AquosSetSystemInfo("CLUB_JP_ID",document.form1.text2.value);
+        test.AquosSetSystemInfo("CLUB_JP_CODE",document.form1.text3.value);
+        test.AquosSetSystemInfo("CLUB_JP_EXPIREDATE",document.form1.text4.value);
+    }
+
+    </script>
+
+  </head>
+
+<body>
+<div>
+<h1>ログイン情報の読み書きテスト</h1>
+　<br/><br/>
+
+ログイン状態の確認をする場合は、「ログイン確認」ボタンを<br/>
+押した後HOME画面に戻ってください。<br/><br/>
+ログアウト状態の確認をする場合は、「ログアウト確認」ボタンを<br/>
+押した後HOME画面に戻ってください。<br/><br/><br/>
+
+</div>
+
+
+    <form name="form1">
+
+        <input type="button" value="ログイン確認" onclick=setlogininfovalue();>
+        <input type="button" value="ログアウト確認" onclick=clearlogininfo();>
+
+
+<br/><br/><br/><br/>　メモリ情報<br/>
+
+    	<table>
+    		<tr>
+          		<td>ニックネーム</td>
+	    		<td><input type="text" name="text1" size="60"></td>
+	    		<td> URLエンコード（UTF-8）した値（Max 180bytes）</td>
+	    	</tr>
+    		<tr>
+          		<td>SHARP ID</td>
+	    		<td><input type="text" name="text2" size="60"></td>
+	    		<td> （Max 50bytes）</td>
+	    	</tr>
+    		<tr>
+          		<td>連携コード</td>
+	    		<td><input type="text" name="text3" size="60"></td>
+	    		<td> （Max 32bytes）</td>
+	    	</tr>
+    		<tr>
+          		<td>有効期限</td>
+	    		<td><input type="text" name="text4" size="60"></td>
+	    		<td> （yyyy.mm.dd mm:ss GMT+09:00）</td>
+	    	</tr>
+    	</table>
+
+        <input type="button" value="書き込み" onclick=setlogininfo();>
+        <input type="button" value="読み込み" onclick=getlogininfo();>
+        <input type="button" value="メモリクリア" onclick=clearlogininfo();>
+
+    </form>
+</body>
+</html>

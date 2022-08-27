@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>pote2.net : lab [cookie]</title>
+		<meta name="generator" content="Coda 2" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="author" content="Wakabayashi, Kenichi" />
+		<meta name="description" content="Web技術を使った様々なアプリケーションの実験" />
+		<link href="/common/pote2.css" type="text/css" rel="STYLESHEET" />
+		<link href="/common/pote2.css" type="text/css" rel="STYLESHEET" />
+		<script type="text/javascript" src="cookie.js"></script>
+		<meta http-equiv="Content-Style-Type" content="text/css">
+	</head>
+	<body>
+		■Cookie書き込み
+		<form name="cookie_write">
+			<table border="0">
+				<tr>
+					<td>
+						<input type="text" name="key" id="key"  placeholder="名前" type="hidden" val="key"></td>
+						key = <input type="text" id="val" placeholder="値">
+					</td>
+				</tr>
+				<tr>
+					<td>有効日数 =  <input type="text" name="period" id="period" value="14"  placeholder="有効日数"></td>
+				</tr>
+			</table>
+			<!-- input type="submit" onClick="setCookie(key, val, period);" value="書き込み"></input -->
+			<a href="javascript:void(0);" onClick="javascript:setCookie(document.cookie_write.key.value, document.cookie_write.val.value, document.cookie_write.period.value);">書き込み</a>
+		</form>
+            <br /><br /><br /><br />
+		■Cookie読みだし
+		<form name="cookie_read">
+			<!-- table border="0">
+				<tr>
+					<td>key = </td>
+					<td><input type="text" name="key" value="key"></td>
+				</tr>
+			</table -->
+			<a href="javascript:void(0);" onClick="javascript:loadCookie();">読みだし</a>
+		</form>
+	</body>
+</html>

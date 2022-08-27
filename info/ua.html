@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<title>User Agent Information</title>
+		<meta name="generator" content="Jedit X" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="author" content="kenichi" />
+		<meta name="description" content="Web技術を使った様々なアプリケーションの研究" />
+		<link href="/common/pote2.css" type="text/css" rel="STYLESHEET" />
+		<script type="text/javascript" src="/common/pote2.js"></script>
+	</head>
+	<body>
+		<table border="1">
+		<script language="JavaScript">
+			<!--
+			//ブラウザ情報を順番に全て出力
+			for(key in navigator)
+			{
+				value = navigator[key];
+				document.write("<tr><td>",key,"</td><td>",value,"</td></tr>");
+			}
+			document.write("<tr><td>Screen Width</td><td>",screen.width, "(Available:", screen.availWidth, ")</td></tr>");
+			document.write("<tr><td>Screen Height</td><td>",screen.height,"(Available:", screen.availHeight, ")</td></tr>");
+			document.write("<tr><td>X DPI</td><td>",screen.deviceXDPI,"(Logical:", screen.logicalXDPI, ")</td></tr>");
+			document.write("<tr><td>Y DPI</td><td>",screen.deviceYDPI,"(Logical:", screen.logicalYDPI, ")</td></tr>");
+			document.write("<tr><td>Window Width</td><td>",window.outerWidth,"(Inner Size:", window.innerWidth, ")</td></tr>");
+			document.write("<tr><td>Window Height</td><td>",window.outerHeight,"(Inner Size:", window.innerHeight, ")</td></tr>");
+			//-->
+		</script>
+		</table>
+	</body>
+</html>

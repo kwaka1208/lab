@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<title>Home Information Media for AQUOS</title>
+		<meta name="generator" content="Jedit X" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="author" content="kenichi" />
+		<meta name="description" content="Web技術を使った様々なアプリケーションの研究" />
+		<link href="aquos.css" type="text/css" rel="STYLESHEET" />
+		<script type="text/javascript" src="/common/prototype-1.6.0.3.js"></script>
+		<script type="text/javascript" src="lab.js"></script>
+	</head>
+	<body>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+			setInterval(ShowClock,1000);
+			setInterval(UpdateAd,1000);
+		//-->
+		</script>
+		<table border="0">
+			<tr>
+				<td>
+					<div class="button"><a href="javascript:alert('Sorry, there is no way!');"><img src="images/chart-icon.png" width="120" height="120"></a><br />
+					電力量</div>
+				</td>
+				<td>
+					<div class="button"><a href="https://www.google.com/calendar/"><img src="images/calendar-icon.png" width="120" height="120"></a><br />
+					カレンダー</div>
+				</td>
+				<td>
+					<div class="button"><a href="https://mail.google.com/mail/?uip=1#contacts"><img src="images/addressbook-icon.png" width="120" height="120"></a><br />
+					アドレス帳</div>
+				</td>
+				<td>
+					<div class="button"><a href="http://www.amazon.co.jp/"><img src="images/cart-icon.png" width="120" height="120"><br />
+					ショッピング</a></div>
+				</td>
+				<td colspan="2" align="center" width="280">
+					<img src="/images/count/blank.gif" id="hour1" alt="hour" />
+					<img src="/images/count/blank.gif" id="hour2" alt="hour" />
+					：
+					<img src="/images/count/blank.gif" id="minute1" alt="minute" />
+					<img src="/images/count/blank.gif" id="minute2" alt="minute" />
+					.
+					<img src="/images/count/blank.gif" id="second1" alt="second" />
+					<img src="/images/count/blank.gif" id="second2" alt="second" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="button"><a href="https://twitter.com/kwaka_lab"><img src="images/chat-icon.png" width="120" height="120"></a><br />
+					ツイッター</div>
+				</td>
+				<td>
+					<div class="button"><a href="https://mail.google.com/mail"><img src="images/edit-icon.png" width="120" height="120"></a><br />
+					メール</div>
+				</td>
+				<td>
+					<div class="button"><a href="http://www.google.co.jp/"><img src="images/info-icon.png" width="120" height="120"></a><br />
+					インターネット</a></div>
+				</td>
+				<td>
+					<div class="button"><a href="javascript:alert('Sorry, there is no way!');"><img src="images/configure-icon.png" width="120" height="120"></a><br />
+					設定</div>
+				</td>
+				<td align="center">
+					<div id="ad1"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="button"><a href="http://www.google.co.jp/reader/"><img src="images/alert-icon.png" width="120" height="120"></a><br />
+					新着情報</div>
+				</td>
+				<td>
+					<div class="button"><a href="javascript:alert('Sorry, there is no way!');"><img src="images/add-1-icon.png" width="120" height="120"></a><br />
+					機能追加</div>
+				</td>
+				<td>
+					<div class="button"><img src="images/blank.png" width="120" height="120"><br />
+					</div>
+				</td>
+				<td>
+					<div class="button"><img src="images/blank.png" width="120" height="120"><br />
+					</div>
+				</td>
+				<td align="center">
+					<div id="ad2"></div>
+				</td>
+			</tr>
+		</table>
+		<br />
+		<div class="news">
+<!-- ++Begin News Bar Wizard Generated Code++ -->
+  <!--
+  // Created with a Google AJAX Search Wizard
+  // http://code.google.com/apis/ajaxsearch/wizards.html
+  -->
+
+  <!--
+  // The Following div element will end up holding the actual newsbar.
+  // You can place this anywhere on your page.
+  -->
+  <div id="newsBar-bar">
+    <span style="color:#676767;font-size:11px;margin:10px;padding:4px;">Loading...</span>
+  </div>
+
+  <!-- Ajax Search Api and Stylesheet
+  // Note: If you are already using the AJAX Search API, then do not include it
+  //       or its stylesheet again
+  -->
+  <script src="http://www.google.com/uds/api?file=uds.js&v=1.0&source=uds-nbw"
+    type="text/javascript"></script>
+  <style type="text/css">
+    @import url("http://www.google.com/uds/css/gsearch.css");
+  </style>
+
+  <!-- News Bar Code and Stylesheet -->
+  <script type="text/javascript">
+    window._uds_nbw_donotrepair = true;
+  </script>
+  <script src="http://www.google.com/uds/solutions/newsbar/gsnewsbar.js?mode=new"
+    type="text/javascript"></script>
+  <style type="text/css">
+    @import url("http://www.google.com/uds/solutions/newsbar/gsnewsbar.css");
+  </style>
+
+  <script type="text/javascript">
+    function LoadNewsBar() {
+      var newsBar;
+      var options = {
+        largeResultSet : false,
+        title : "AQUOS NEWS",
+        horizontal : true,
+        autoExecuteList : {
+          executeList : ["オリンピック", "サッカー", "シャープ"]
+        }
+      }
+
+      newsBar = new GSnewsBar(document.getElementById("newsBar-bar"), options);
+    }
+    // arrange for this function to be called during body.onload
+    // event processing
+    GSearch.setOnLoadCallback(LoadNewsBar);
+  </script>
+<!-- ++End News Bar Wizard Generated Code++ -->
+		</div>
+	</body>
+</html>
