@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu .group {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+li.title {
+    font-size: 20px;
+    font-weight: 600;
+}
