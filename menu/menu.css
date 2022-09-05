@@ -13,7 +13,7 @@ h1 {
     justify-content: center;
 }
 
-.menu .group {
+.food .drink .side {
     display: flex;
     flex-direction: column;
 }

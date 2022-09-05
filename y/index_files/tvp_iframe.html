@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0571)https://s.yimg.jp/images/listing/tool/tvp/iframe/tvp_iframe.html?ctx=19827257&cmp=DV411894&sid=yahoojapan&plc=yj-iqm-js&adsrv=0&btreg=&btadsrv=&crt=&tagtype=&dvtagver=6.1.src&prr=1&aufilter1=DV411894&ppid=235&autt=1&auip=61.89.50.31&DVPX_PP_AUCTION_UA=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/104.0.0.0%20Safari/537.36&turl=http://toppage.yahoo.co.jp&c1=3&audvc=Desktop&c2=24122_277874&auevent=d51050900e60cf7745caf24a972f52678f8edc3c7e0db189df0e7f2c72efeb68&c3=yahoo_jp_top_quriosity_frm_im&c5=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+
+<script type="text/javascript">
+
+function escapeString(in_str, escape_amp) {
+  var escaped_str = in_str.replace(/</g, "&lt;")
+                          .replace(/>/g, "&gt;")
+                          .replace(/"/g, "&quot;")
+                          .replace(/'/g, "&#39;");
+  if (escape_amp) {
+     escaped_str = escaped_str.replace(/&/g, "&amp;");
+  }
+  return escaped_str;
+}
+
+const TvpScriptCreater = {
+  printScript: function() {
+    const url_base = "https://cdn.doubleverify.com/dvtp_src.js";
+    let query = location.search.slice(1);
+    if (query.length > 0) {
+      query = escapeString(query, false);
+    } else {
+      return;
+    }
+
+    let tag = document.createElement('script');
+    tag.src = url_base + '#' + query;
+    tag.type = "text/javascript";
+
+    let body = document.getElementsByTagName('body')[0];
+    body.appendChild(tag);
+  }
+};
+
+TvpScriptCreater.printScript();
+
+</script><iframe id="iframe_968730094945" name="iframe_968730094945" data-dv-frm="968730094945" width="0" height="0" src="./saved_resource.html" style="display: none;"></iframe><script src="./dvtp_src.js" type="text/javascript"></script>
+
+
+<div><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -100000px; top: -100000px;" src="./saved_resource(3).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: 2px; top: 2px;" src="./saved_resource(4).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -10px; top: 2px;" src="./saved_resource(5).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: 3px; top: -11px;" src="./saved_resource(6).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -11px; top: -11px;" src="./saved_resource(7).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -3px; top: -3px;" src="./saved_resource(8).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: 0px; top: 0px;" src="./saved_resource(9).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -4px; top: -4px;" src="./saved_resource(10).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -4px; top: -3px;" src="./saved_resource(11).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -7px; top: -7px;" src="./saved_resource(12).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -3px; top: -3px;" src="./saved_resource(13).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -8px; top: 0px;" src="./saved_resource(14).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -2px; top: -6px;" src="./saved_resource(15).html"></iframe><iframe width="8" height="8" frameborder="0" style="position: absolute; visibility: hidden; left: -7px; top: -7px;" src="./saved_resource(16).html"></iframe></div></body></html>
