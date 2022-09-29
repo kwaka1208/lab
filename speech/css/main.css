@@ -14,8 +14,12 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.8;
+  background-color: floralwhite;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1em;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -261,3 +265,16 @@ textarea {
   }
 }
 
+body > div {
+  margin-left: 30px;
+}
+
+form, textarea {
+  max-width: 500px;
+  width: 100%;
+}
+
+.param .state .console {
+  max-width: 1000px;
+  width: 100%;
+}
