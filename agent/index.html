@@ -26,7 +26,7 @@
 <body>
 	<div>
 		<form id="param">
-			<input type="button" onclick="recognition_control();" value="音声認識開始" class="btn btn-primary"
+			<input type="button" onclick="speak('こんにちは');recognition_control();" value="音声認識開始" class="btn btn-primary"
 				id="recog_button">
 		</form>
 		<hr size="1">
@@ -39,10 +39,12 @@
 		<img id='agent' src='/assets/images/chat-icon.png'>
 	</div>
 	<script>
-		// 発言を作成
-		const uttr = new SpeechSynthesisUtterance("こんにちは")
-		// 発言を再生 (発言キューに発言を追加)
-		speechSynthesis.speak(uttr)
-	  </script>
+		function speak(sentence) {
+			// 発言を作成
+			const uttr = new SpeechSynthesisUtterance(sentence)
+			// 発言を再生 (発言キューに発言を追加)
+			speechSynthesis.speak(uttr)
+		}
+	</script>
 </body>
 </html>
