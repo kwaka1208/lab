@@ -66,7 +66,7 @@
 		// 発言を作成
 		const uttr = new SpeechSynthesisUtterance();
 		uttr.lang = "ja-JP"
-		utth.text = sentence
+		uttr.text = sentence
 		// 発言を再生 (発言キューに発言を追加)
 		speechSynthesis.speak(uttr)
 	}
