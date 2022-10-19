@@ -34,6 +34,7 @@
 				resultValue = $("#result").val() + "\r\n" + results[i][0].transcript;
 				$("#result").val(resultValue);
 				$("#progress").val("");
+				speak(resultValue)
 			}
 			//認識の中間結果
 			else{
@@ -59,4 +60,13 @@
 			recognition.start();
 			state = true;
 		}
+	}
+
+	function speak(sentence) {
+		// 発言を作成
+		const uttr = new SpeechSynthesisUtterance();
+		uttr.lang = "ja-JP"
+		utth.text = sentence
+		// 発言を再生 (発言キューに発言を追加)
+		speechSynthesis.speak(uttr)
 	}
